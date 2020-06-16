@@ -1,7 +1,7 @@
 JSON object parsing with preserving keys order
 =============================================
 
-![coverage](https://gitlab.com/c0b/go-ordered-json/badges/master/coverage.svg)
+Import from https://gitlab.com/c0b/go-ordered-json.git
 
 Refers
 

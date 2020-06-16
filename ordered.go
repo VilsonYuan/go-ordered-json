@@ -159,6 +159,9 @@ func (om *OrderedMap) UnmarshalJSON(data []byte) error {
 		return fmt.Errorf("expect JSON object open with '{'")
 	}
 
+	if om.l == nil {om.l = list.New()}
+	if om.keys == nil {om.keys = make(map[string]*list.Element)}
+	if om.m == nil {om.m = make(map[string]interface{})}
 	err = om.parseobject(dec)
 	if err != nil {
 		return err
